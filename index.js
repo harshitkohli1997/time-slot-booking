@@ -50,7 +50,6 @@ app.put('/book/:id', (req, res) => {
 // app.use('/v1', router);
 port = process.env.port || 3000;
 const server = app.listen(port, () => {
-  const { address, port } = server.address();
-  console.log(`Listening at http://${address}:${port}`);
+    console.log(`Listening at ${port}`);
 });
 
